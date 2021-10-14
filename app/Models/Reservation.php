@@ -8,4 +8,23 @@ use Illuminate\Database\Eloquent\Model;
 class Reservation extends Model
 {
     use HasFactory;
+
+    protected $casts = [
+        'price' => 'integer',
+        'status' => 'integer',
+        'start_date' => 'immutable_date',
+        'end_date' => 'immutable_date'
+    ];
+
+
+
+    public function user()
+    {
+        $this->belongsTo(User::class);
+    }
+
+    public function office()
+    {
+        $this->belongsTo(Office::class);
+    }
 }
