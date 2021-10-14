@@ -25,7 +25,7 @@ class CreateReservationsTable extends Migration
             $table->timestamps();
 
 
-            $table->index()
+            // $table->index()
 
             // $table->index(['user_id','status']);
             // $table
