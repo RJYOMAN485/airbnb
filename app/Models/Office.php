@@ -19,7 +19,7 @@ class Office extends Model
 
     protected $casts = [
         'lat' => 'decimal:8',
-        'lng' => 'deciman:8',
+        'lng' => 'decimal:8',
         'approval_status' => 'integer',
         'hiden' => 'bool',
         'price_per_day' => 'integer',
